@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Compresores de Aire Colombia | Recarga de Compresores</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background:#00c3ff;
+    border-radius:10px;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:999;
+    backdrop-filter:blur(12px);
+    background:rgba(5,8,22,.65);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-size:1.7rem;
+    font-weight:800;
+    color:#fff;
+}
+
+.logo span{
+    color:#00c3ff;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+    position:relative;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:-6px;
+    background:#00c3ff;
+    transition:.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.nav-links a:hover{
+    color:#00c3ff;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:130px 7% 80px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    background:#00c3ff33;
+    filter:blur(120px);
+    border-radius:50%;
+    top:-200px;
+    right:-150px;
+    animation:float 6s infinite ease-in-out;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#004cff33;
+    filter:blur(120px);
+    border-radius:50%;
+    bottom:-200px;
+    left:-100px;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(25px);
+    }
+}
+
+.hero-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    width:100%;
+    position:relative;
+    z-index:10;
+}
+
+.hero-text h1{
+    font-size:4.5rem;
+    line-height:1.1;
+    margin-bottom:25px;
+    animation:fadeUp 1s ease;
+}
+
+.hero-text h1 span{
+    color:#00c3ff;
+}
+
+.hero-text p{
+    color:#c7d3ff;
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:35px;
+    animation:fadeUp 1.2s ease;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:15px 30px;
+    border-radius:14px;
+    border:none;
+    font-weight:600;
+    cursor:pointer;
+    transition:.4s;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#00c3ff,#0066ff);
+    color:white;
+    box-shadow:0 0 25px #00c3ff55;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 0 35px #00c3ff99;
+}
+
+.btn-secondary{
+    border:1px solid #00c3ff55;
+    color:white;
+    background:transparent;
+}
+
+.btn-secondary:hover{
+    background:#00c3ff11;
+    transform:translateY(-4px);
+}
+
+/* HERO CARDS */
+.hero-cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(14px);
+    border-radius:24px;
+    padding:28px;
+    transition:.5s;
+    position:relative;
+    overflow:hidden;
+    animation:fadeUp 1.1s ease;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    width:150px;
+    height:150px;
+    background:#00c3ff22;
+    border-radius:50%;
+    top:-50px;
+    right:-50px;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    border-color:#00c3ff66;
+    box-shadow:0 0 30px rgba(0,195,255,.2);
+}
+
+.card h3{
+    margin-top:20px;
+    margin-bottom:12px;
+    font-size:1.2rem;
+}
+
+.card p{
+    color:#b7c3e0;
+    line-height:1.7;
+}
+
+.icon{
+    width:65px;
+    height:65px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#00c3ff,#0066ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.8rem;
+    box-shadow:0 0 20px #00c3ff44;
+}
+
+/* SECTIONS */
+section{
+    padding:100px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#b5c1de;
+}
+
+/* SERVICES */
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.service-box{
+    background:#0d1328;
+    border-radius:24px;
+    padding:35px;
+    transition:.5s;
+    border:1px solid transparent;
+}
+
+.service-box:hover{
+    transform:translateY(-10px);
+    border-color:#00c3ff44;
+    box-shadow:0 0 25px #00c3ff22;
+}
+
+.service-box h3{
+    margin:20px 0;
+}
+
+.service-box p{
+    color:#b8c3df;
+    line-height:1.8;
+}
+
+/* STATS */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.stat{
+    background:linear-gradient(135deg,#081121,#0d1f3f);
+    border-radius:24px;
+    text-align:center;
+    padding:45px 20px;
+    transition:.4s;
+}
+
+.stat:hover{
+    transform:scale(1.04);
+}
+
+.stat h2{
+    font-size:3rem;
+    color:#00c3ff;
+}
+
+.stat p{
+    margin-top:10px;
+    color:#d6def5;
+}
+
+/* CTA */
+.cta{
+    background:linear-gradient(135deg,#00c3ff,#0057ff);
+    border-radius:40px;
+    padding:70px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.cta::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,.15);
+    border-radius:50%;
+    top:-100px;
+    right:-100px;
+}
+
+.cta h2{
+    font-size:3rem;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:35px;
+    position:relative;
+}
+
+/* FOOTER */
+footer{
+    margin-top:100px;
+    padding:70px 7% 30px;
+    background:#040812;
+    position:relative;
+    overflow:hidden;
+}
+
+footer::before{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#00c3ff22;
+    border-radius:50%;
+    filter:blur(120px);
+    top:-200px;
+    left:-150px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+    position:relative;
+}
+
+.footer-col h3{
+    margin-bottom:20px;
+    color:#00c3ff;
+}
+
+.footer-col p,
+.footer-col a{
+    color:#c4cee8;
+    line-height:2;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-col a:hover{
+    color:#00c3ff;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    margin-top:50px;
+    padding-top:25px;
+    text-align:center;
+    color:#8f9bb7;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* MOBILE */
+@media(max-width:980px){
+
+    .hero-container{
+        grid-template-columns:1fr;
+    }
+
+    .hero-text h1{
+        font-size:3rem;
+    }
+
+    .hero-cards{
+        grid-template-columns:1fr;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .section-title h2{
+        font-size:2.2rem;
+    }
+
+    .cta{
+        padding:50px 30px;
+    }
+
+    .cta h2{
+        font-size:2rem;
+    }
+}
+.icon i{
+    font-size:28px;
+    color:white;
+    animation:floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-6px);
+    }
+}
+/* SERVICES MODERN */
+
+.services-section{
+    position:relative;
+    overflow:hidden;
+}
+
+.mini-title{
+    color:#00c3ff;
+    font-weight:700;
+    letter-spacing:2px;
+    font-size:.9rem;
+}
+
+.section-title h2 span{
+    color:#00c3ff;
+}
+
+.services-modern-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+    margin-top:70px;
+}
+
+.service-modern-card{
+    position:relative;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border-radius:30px;
+    padding:40px 35px;
+    overflow:hidden;
+    transition:.5s;
+}
+
+.service-modern-card:hover{
+    transform:translateY(-14px);
+    border-color:#00c3ff55;
+    box-shadow:0 0 40px rgba(0,195,255,.15);
+}
+
+.service-glow{
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:#00c3ff22;
+    border-radius:50%;
+    filter:blur(60px);
+    top:-60px;
+    right:-60px;
+}
+
+.service-icon{
+    width:75px;
+    height:75px;
+    border-radius:22px;
+    background:linear-gradient(135deg,#00c3ff,#0057ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+    box-shadow:0 0 25px #00c3ff55;
+}
+
+.service-icon i{
+    font-size:30px;
+    color:white;
+}
+
+.service-modern-card h3{
+    font-size:1.5rem;
+    margin-bottom:18px;
+}
+
+.service-modern-card p{
+    color:#c4cee8;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.service-modern-card ul{
+    list-style:none;
+}
+
+.service-modern-card ul li{
+    margin-bottom:14px;
+    color:#dbe5ff;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.service-modern-card ul li i{
+    color:#00c3ff;
+}
+
+.featured-card{
+    transform:scale(1.05);
+    border:1px solid #00c3ff55;
+    box-shadow:0 0 35px rgba(0,195,255,.18);
+}
+
+.featured-card:hover{
+    transform:scale(1.08) translateY(-10px);
+}
+
+.service-badge{
+    position:absolute;
+    top:18px;
+    right:18px;
+    background:linear-gradient(135deg,#00c3ff,#0057ff);
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:.75rem;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+@media(max-width:900px){
+
+    .featured-card{
+        transform:none;
+    }
+
+    .featured-card:hover{
+        transform:translateY(-10px);
+    }
+
+}
+/* WHY SECTION */
+
+.why-section{
+    position:relative;
+    overflow:hidden;
+}
+
+.why-grid{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.why-card{
+    position:relative;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    padding:40px 30px;
+    overflow:hidden;
+    transition:.5s;
+}
+
+.why-card:hover{
+    transform:translateY(-12px);
+    border-color:#00c3ff55;
+    box-shadow:0 0 35px rgba(0,195,255,.15);
+}
+
+.why-number{
+    position:absolute;
+    top:20px;
+    right:25px;
+    font-size:4rem;
+    font-weight:800;
+    color:rgba(255,255,255,.05);
+}
+
+.why-icon{
+    width:75px;
+    height:75px;
+    border-radius:22px;
+    background:linear-gradient(135deg,#00c3ff,#0057ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+    box-shadow:0 0 25px #00c3ff55;
+}
+
+.why-icon i{
+    font-size:28px;
+    color:white;
+}
+
+.why-card h3{
+    font-size:1.4rem;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#c4cee8;
+    line-height:1.8;
+}
+/* WHATSAPP STRIP */
+
+.whatsapp-strip{
+    padding:20px 7% 0;
+    position:relative;
+    z-index:20;
+    margin-top:-40px;
+}
+
+.whatsapp-container{
+    background:linear-gradient(135deg,#0f172a,#111827);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+    padding:35px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 0 40px rgba(0,0,0,.3);
+}
+
+.whatsapp-container::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#25d36622;
+    border-radius:50%;
+    filter:blur(90px);
+    top:-120px;
+    left:-100px;
+}
+
+.whatsapp-icon{
+    min-width:90px;
+    height:90px;
+    border-radius:25px;
+    background:linear-gradient(135deg,#25d366,#1ebe5d);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 0 35px rgba(37,211,102,.45);
+    animation:pulseWhats 2s infinite;
+}
+
+.whatsapp-icon i{
+    color:white;
+    font-size:42px;
+}
+
+@keyframes pulseWhats{
+
+    0%{
+        transform:scale(1);
+        box-shadow:0 0 0 rgba(37,211,102,.4);
+    }
+
+    50%{
+        transform:scale(1.05);
+        box-shadow:0 0 35px rgba(37,211,102,.6);
+    }
+
+    100%{
+        transform:scale(1);
+        box-shadow:0 0 0 rgba(37,211,102,.4);
+    }
+}
+
+.whatsapp-content{
+    flex:1;
+}
+
+.whatsapp-content span{
+    color:#25d366;
+    font-weight:700;
+    letter-spacing:2px;
+    font-size:.85rem;
+}
+
+.whatsapp-content h2{
+    margin-top:10px;
+    font-size:2rem;
+    line-height:1.3;
+    margin-bottom:12px;
+}
+
+.whatsapp-content p{
+    color:#c4cee8;
+    line-height:1.8;
+}
+
+.whatsapp-btn{
+    background:linear-gradient(135deg,#25d366,#1ebe5d);
+    color:white;
+    text-decoration:none;
+    padding:18px 28px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-weight:600;
+    transition:.4s;
+    white-space:nowrap;
+    box-shadow:0 0 25px rgba(37,211,102,.35);
+}
+
+.whatsapp-btn:hover{
+    transform:translateY(-6px) scale(1.03);
+    box-shadow:0 0 40px rgba(37,211,102,.55);
+}
+
+.whatsapp-btn i{
+    font-size:22px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .whatsapp-container{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 25px;
+    }
+
+    .whatsapp-content h2{
+        font-size:1.6rem;
+    }
+
+    .whatsapp-btn{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+/* STEPS SECTION */
+
+.steps-section{
+    position:relative;
+    overflow:hidden;
+}
+
+.steps-grid{
+    margin-top:80px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.step-card{
+    position:relative;
+    width:320px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+    padding:45px 30px;
+    overflow:hidden;
+    transition:.5s;
+    text-align:center;
+}
+
+.step-card::before{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    background:#00c3ff11;
+    border-radius:50%;
+    top:-100px;
+    right:-100px;
+    filter:blur(50px);
+}
+
+.step-card:hover{
+    transform:translateY(-12px);
+    border-color:#00c3ff55;
+    box-shadow:0 0 40px rgba(0,195,255,.15);
+}
+
+.active-step{
+    transform:scale(1.05);
+    border-color:#00c3ff55;
+    box-shadow:0 0 40px rgba(0,195,255,.2);
+}
+
+.active-step:hover{
+    transform:scale(1.08) translateY(-10px);
+}
+
+.step-number{
+    position:absolute;
+    top:20px;
+    right:25px;
+    font-size:4rem;
+    font-weight:800;
+    color:rgba(255,255,255,.05);
+}
+
+.step-icon{
+    width:90px;
+    height:90px;
+    border-radius:26px;
+    margin:auto;
+    background:linear-gradient(135deg,#00c3ff,#0057ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 0 30px rgba(0,195,255,.35);
+    margin-bottom:30px;
+}
+
+.step-icon i{
+    color:white;
+    font-size:38px;
+}
+
+.step-card h3{
+    font-size:1.5rem;
+    margin-bottom:18px;
+}
+
+.step-card p{
+    color:#c4cee8;
+    line-height:1.9;
+}
+
+.step-line{
+    width:70px;
+    height:3px;
+    background:linear-gradient(to right,#00c3ff,#0057ff);
+    border-radius:20px;
+    opacity:.7;
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+    .steps-grid{
+        flex-direction:column;
+    }
+
+    .step-line{
+        width:3px;
+        height:70px;
+    }
+
+    .active-step{
+        transform:none;
+    }
+
+    .active-step:hover{
+        transform:translateY(-10px);
+    }
+
+}
+
+@media(max-width:500px){
+
+    .step-card{
+        width:100%;
+    }
+
+}
+/* FAQ SECTION */
+
+.faq-section{
+    position:relative;
+    overflow:hidden;
+}
+
+.faq-container{
+    max-width:950px;
+    margin:70px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.faq-item{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.faq-item:hover{
+    border-color:#00c3ff55;
+    box-shadow:0 0 30px rgba(0,195,255,.12);
+}
+
+.faq-question{
+    width:100%;
+    background:none;
+    border:none;
+    outline:none;
+    padding:28px 30px;
+    color:white;
+    font-size:1.1rem;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.faq-question i{
+    color:#00c3ff;
+    font-size:1rem;
+    transition:.4s;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .5s ease;
+}
+
+.faq-answer p{
+    padding:0 30px 30px;
+    color:#c4cee8;
+    line-height:1.9;
+}
+
+/* ACTIVE */
+
+.active-faq{
+    border-color:#00c3ff55;
+    box-shadow:0 0 35px rgba(0,195,255,.14);
+}
+
+.active-faq .faq-answer{
+    max-height:300px;
+}
+
+.active-faq .faq-question i{
+    transform:rotate(45deg);
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .faq-question{
+        font-size:1rem;
+        padding:24px;
+        gap:20px;
+        text-align:left;
+    }
+
+    .faq-answer p{
+        padding:0 24px 24px;
+    }
+
+}
+.coverage-section{
+    padding:100px 7%;
+}
+
+.city-grid{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.city-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.4s;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.city-card::before{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+    background:#00c3ff22;
+    border-radius:50%;
+    filter:blur(70px);
+    top:-80px;
+    right:-80px;
+}
+
+.city-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    border-color:#00c3ff55;
+    box-shadow:0 0 35px rgba(0,195,255,.15);
+}
+
+.city-card i{
+    font-size:34px;
+    color:#00c3ff;
+    margin-bottom:18px;
+    display:block;
+    animation:floatIcon 3s infinite ease-in-out;
+}
+
+.city-card h3{
+    font-size:1.2rem;
+    margin-bottom:8px;
+}
+
+.city-card p{
+    font-size:.9rem;
+    color:#b8c3df;
+    line-height:1.6;
+}
+
+/* ANIMACIÓN ICONO */
+@keyframes floatIcon{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-6px); }
+}
+.steps-clean{
+    padding:100px 7%;
+    text-align:center;
+}
+
+.steps-row{
+    margin-top:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.step-box{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    padding:40px 25px;
+    width:280px;
+    position:relative;
+    transition:.4s;
+}
+
+.step-box:hover{
+    transform:translateY(-10px);
+    border-color:#00c3ff55;
+    box-shadow:0 0 30px rgba(0,195,255,.15);
+}
+
+.step-box i{
+    font-size:32px;
+    color:#00c3ff;
+    margin-bottom:15px;
+}
+
+.step-box h3{
+    margin-bottom:10px;
+}
+
+.step-box p{
+    color:#c4cee8;
+    line-height:1.6;
+}
+
+.step-box span{
+    position:absolute;
+    top:15px;
+    right:18px;
+    font-size:3rem;
+    font-weight:800;
+    color:rgba(255,255,255,.06);
+}
+
+.step-line{
+    width:60px;
+    height:3px;
+    background:linear-gradient(to right,#00c3ff,#0057ff);
+    border-radius:10px;
+    opacity:.6;
+}
+
+/* highlight step */
+.active{
+    border-color:#00c3ff66;
+    box-shadow:0 0 35px rgba(0,195,255,.2);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+    .steps-row{
+        flex-direction:column;
+    }
+
+    .step-line{
+        width:3px;
+        height:40px;
+    }
+
+}
+.wa-form-section{
+    padding:100px 7%;
+}
+
+.wa-form{
+    max-width:700px;
+    margin:60px auto 0;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    padding:40px;
+    border-radius:30px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 40px rgba(0,0,0,.3);
+}
+
+.input-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.wa-form input,
+.wa-form textarea{
+    width:100%;
+    padding:15px 18px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.08);
+    background:#0b1224;
+    color:white;
+    outline:none;
+    transition:.3s;
+}
+
+.wa-form input:focus,
+.wa-form textarea:focus{
+    border-color:#00c3ff55;
+    box-shadow:0 0 15px rgba(0,195,255,.2);
+}
+
+.wa-form button{
+    width:100%;
+    margin-top:15px;
+    padding:16px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(135deg,#25d366,#1ebe5d);
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    transition:.4s;
+}
+
+.wa-form button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 30px rgba(37,211,102,.4);
+}
+
+/* MOBILE */
+@media(max-width:700px){
+    .input-grid{
+        grid-template-columns:1fr;
+    }
+}
+.footer{
+    margin-top:100px;
+    padding:80px 7% 30px;
+    background:#050816;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer-col h3{
+    color:#00c3ff;
+    margin-bottom:20px;
+}
+
+.footer-col p,
+.footer-col a{
+    color:#c4cee8;
+    text-decoration:none;
+    display:block;
+    margin-bottom:12px;
+    transition:.3s;
+    line-height:1.6;
+}
+
+.footer-col a:hover{
+    color:#00c3ff;
+    transform:translateX(5px);
+}
+
+/* WhatsApp button */
+.footer-whatsapp{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-top:15px;
+    padding:12px 16px;
+    background:linear-gradient(135deg,#25d366,#1ebe5d);
+    border-radius:14px;
+    color:white !important;
+    font-weight:600;
+    box-shadow:0 0 25px rgba(37,211,102,.25);
+    transition:.4s;
+}
+
+.footer-whatsapp:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 35px rgba(37,211,102,.4);
+}
+
+.footer-bottom{
+    margin-top:60px;
+    padding-top:20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#8f9bb7;
+}
+
+.open{
+    color:#25d366;
+    font-weight:600;
+}
+.types-section{
+    padding:100px 7%;
+}
+
+.types-grid{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.type-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    padding:35px;
+    position:relative;
+    transition:.4s;
+    overflow:hidden;
+}
+
+.type-card:hover{
+    transform:translateY(-10px);
+    border-color:#00c3ff55;
+    box-shadow:0 0 35px rgba(0,195,255,.15);
+}
+
+/* título */
+.type-card h3{
+    color:#00c3ff;
+    margin-bottom:5px;
+}
+
+.type-card h4{
+    font-size:1rem;
+    color:#ffffff;
+    margin-bottom:15px;
+}
+
+/* descripción */
+.desc{
+    color:#b8c3df;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+/* lista */
+.type-card ul{
+    list-style:none;
+    padding:0;
+    margin-bottom:25px;
+}
+
+.type-card ul li{
+    margin-bottom:10px;
+    color:#c4cee8;
+}
+
+.type-card ul i{
+    color:#00c3ff;
+    margin-right:8px;
+}
+
+/* botón */
+.type-card a{
+    display:inline-block;
+    padding:12px 18px;
+    background:linear-gradient(135deg,#25d366,#1ebe5d);
+    color:white;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.type-card a:hover{
+    transform:scale(1.05);
+}
+
+/* destacado */
+.featured{
+    border-color:#00c3ff55;
+    box-shadow:0 0 40px rgba(0,195,255,.2);
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#00c3ff;
+    color:#000;
+    padding:5px 10px;
+    border-radius:10px;
+    font-size:.8rem;
+    font-weight:700;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">Compresores de<span> Aire</span> Colombia</div>
+
+    <div class="nav-links">
+        <a href="#hero">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#cobertura">Cobertura</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-text">
+            <h1>
+                Recarga de <span>Compresores</span> de Aire
+            </h1>
+
+            <p>
+                Servicio técnico premium con mantenimiento, calibración,
+                presión certificada y recarga profesional para compresores de aire.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://wa.me/573003759008" class="btn btn-primary" target="_blank">
+                    Solicitar Servicio
+                </a>
+
+                <a href="#cobertura" class="btn btn-secondary">
+                    Ver Cobertura
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-cards">
+
+         <div class="card">
+    <div class="icon">
+        <i class="fas fa-bolt"></i>
+    </div>
+
+    <h3>Respuesta Rápida</h3>
+
+    <p>
+        Atención inmediata 24/7 para empresas,
+        talleres y fábricas.
+    </p>
+</div>
+
+<div class="card">
+    <div class="icon">
+        <i class="fas fa-screwdriver-wrench"></i>
+    </div>
+
+    <h3>Técnicos Certificados</h3>
+
+    <p>
+        Personal especializado en sistemas
+        neumáticos profesionales.
+    </p>
+</div>
+
+<div class="card">
+    <div class="icon">
+        <i class="fas fa-wind"></i>
+    </div>
+
+    <h3>Alta Presión</h3>
+
+    <p>
+        Equipos calibrados para recargas
+        seguras y precisas.
+    </p>
+</div>
+
+<div class="card">
+    <div class="icon">
+        <i class="fas fa-truck"></i>
+    </div>
+
+    <h3>Servicio Móvil</h3>
+
+    <p>
+        Atención directamente en sitio
+        con unidades móviles.
+    </p>
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- WHATSAPP STRIP -->
+<section class="whatsapp-strip">
+
+    <div class="whatsapp-container">
+
+        <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+
+        <div class="whatsapp-content">
+
+            <span>ATENCIÓN 24/7</span>
+
+            <h2>
+                Todos los pedidos y consultas son
+                atendidos directamente por WhatsApp
+            </h2>
+
+            <p>
+                Recibimos pedidos las 24 horas para
+                recarga y venta de compresores de aire.
+            </p>
+
+        </div>
+
+        <a href="https://wa.me/573003759008" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Escribir Ahora
+        </a>
+
+    </div>
+
+</section>
+<!-- SERVICES -->
+<!-- SERVICES -->
+<section class="services-section" id="servicios">
+
+    <div class="section-title">
+        <span class="mini-title">NUESTROS SERVICIOS</span>
+
+        <h2>
+            Aire Comprimido <span>Profesional</span>
+        </h2>
+
+        <p>
+            Soluciones modernas para recarga, mantenimiento
+            y venta de compresores de aire.
+        </p>
+    </div>
+
+    <div class="services-modern-grid">
+
+        <!-- CARD -->
+        <div class="service-modern-card">
+
+            <div class="service-glow"></div>
+
+            <div class="service-icon">
+                <i class="fas fa-wind"></i>
+            </div>
+
+            <h3>Recarga de Compresores</h3>
+
+            <p>
+                Recarga rápida y segura para compresores
+                de aire domésticos y profesionales.
+            </p>
+
+            <ul>
+                <li><i class="fas fa-check"></i> Alta presión</li>
+                <li><i class="fas fa-check"></i> Servicio rápido</li>
+                <li><i class="fas fa-check"></i> Atención móvil</li>
+            </ul>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-modern-card featured-card">
+
+            <div class="service-badge">
+                MÁS POPULAR
+            </div>
+
+            <div class="service-glow"></div>
+
+            <div class="service-icon">
+                <i class="fas fa-gauge-high"></i>
+            </div>
+
+            <h3>Mantenimiento Completo</h3>
+
+            <p>
+                Limpieza, revisión y optimización
+                para mayor potencia y rendimiento.
+            </p>
+
+            <ul>
+                <li><i class="fas fa-check"></i> Diagnóstico técnico</li>
+                <li><i class="fas fa-check"></i> Cambio de filtros</li>
+                <li><i class="fas fa-check"></i> Máxima eficiencia</li>
+            </ul>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-modern-card">
+
+            <div class="service-glow"></div>
+
+            <div class="service-icon">
+                <i class="fas fa-toolbox"></i>
+            </div>
+
+            <h3>Venta de Compresores</h3>
+
+            <p>
+                Equipos modernos de aire comprimido
+                para hogares, talleres y negocios.
+            </p>
+
+            <ul>
+                <li><i class="fas fa-check"></i> Nuevos modelos</li>
+                <li><i class="fas fa-check"></i> Alta potencia</li>
+                <li><i class="fas fa-check"></i> Garantía incluida</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <section class="types-section">
+
+    <div class="section-title">
+
+        <span class="mini-title">COMPRESORES</span>
+
+        <h2>
+            Tipos de <span>Compresores de Aire</span>
+        </h2>
+
+        <p>
+            Elige el tipo de compresor según tu necesidad.
+            Consulta disponibilidad por WhatsApp.
+        </p>
+
+    </div>
+
+    <div class="types-grid">
+
+        <!-- DOMÉSTICO -->
+        <div class="type-card">
+
+            <h3>Uso Doméstico</h3>
+            <h4>Pequeños compresores</h4>
+
+            <p class="desc">
+                Ideal para hogar, inflado, limpieza y trabajos ligeros.
+            </p>
+
+            <ul>
+                <li><i class="fas fa-wind"></i> Uso ocasional</li>
+                <li><i class="fas fa-plug"></i> Bajo consumo</li>
+                <li><i class="fas fa-house"></i> Ideal para hogar</li>
+            </ul>
+
+            <a href="https://wa.me/573003759008?text=Hola,%20quiero%20información%20sobre%20compresores%20domésticos" target="_blank">
+                Consultar
+            </a>
+
+        </div>
+
+        <!-- SEMIPROFESIONAL -->
+        <div class="type-card featured">
+
+            
+
+            <h3>Uso Semiprofesional</h3>
+            <h4>40 – 60 PSI</h4>
+
+            <p class="desc">
+                Perfecto para talleres pequeños y trabajos continuos.
+            </p>
+
+            <ul>
+                <li><i class="fas fa-screwdriver-wrench"></i> Uso frecuente</li>
+                <li><i class="fas fa-clock"></i> Mayor duración</li>
+                <li><i class="fas fa-industry"></i> Talleres pequeños</li>
+            </ul>
+
+            <a href="https://wa.me/573003759008?text=Hola,%20quiero%20compresores%20semiprofesionales" target="_blank">
+                Consultar
+            </a>
+
+        </div>
+
+        <!-- INDUSTRIAL -->
+        <div class="type-card">
+
+            <h3>Uso Industrial</h3>
+            <h4>Alta presión</h4>
+
+            <p class="desc">
+                Para talleres grandes, industria y alto consumo continuo.
+            </p>
+
+            <ul>
+                <li><i class="fas fa-bolt"></i> Alto rendimiento</li>
+                <li><i class="fas fa-gears"></i> Uso intensivo</li>
+                <li><i class="fas fa-truck"></i> Atención prioritaria</li>
+            </ul>
+
+            <a href="https://wa.me/573003759008?text=Hola,%20quiero%20compresores%20industriales" target="_blank">
+                Consultar
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- HOW TO ORDER -->
+<section class="steps-clean">
+
+    <div class="section-title">
+        <h2>Solicita Tu Servicio en <span>3 Pasos</span></h2>
+        <p>Proceso rápido por WhatsApp</p>
+    </div>
+
+    <div class="steps-row">
+
+        <div class="step-box">
+            <i class="fab fa-whatsapp"></i>
+            <h3>Escríbenos</h3>
+            <p>Cuéntanos qué necesitas por WhatsApp.</p>
+            <span>01</span>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step-box active">
+            <i class="fas fa-screwdriver-wrench"></i>
+            <h3>Confirmamos</h3>
+            <p>Coordinamos el servicio rápidamente.</p>
+            <span>02</span>
+        </div>
+
+        <div class="step-line"></div>
+
+        <div class="step-box">
+            <i class="fas fa-truck-fast"></i>
+            <h3>Recibes</h3>
+            <p>Atención en sitio o entrega del servicio.</p>
+            <span>03</span>
+        </div>
+
+    </div>
+
+</section>
+<!-- COBERTURA -->
+<section class="coverage-section" id="cobertura">
+
+    <div class="section-title">
+
+        <span class="mini-title">COBERTURA</span>
+
+        <h2>
+            Ciudades con <span>Servicio Activo</span>
+        </h2>
+
+        <p>
+            Atención en las principales ciudades de Colombia.
+        </p>
+
+    </div>
+
+    <div class="city-grid">
+
+        <div class="city-card">
+            <i class="fas fa-building"></i>
+            <h3>Bogotá</h3>
+            <p>Centro industrial y comercial</p>
+        </div>
+
+        <div class="city-card">
+            <i class="fas fa-mountain-city"></i>
+            <h3>Medellín</h3>
+            <p>Innovación y manufactura</p>
+        </div>
+
+        <div class="city-card">
+            <i class="fas fa-water"></i>
+            <h3>Cali</h3>
+            <p>Industria y logística</p>
+        </div>
+
+        <div class="city-card">
+            <i class="fas fa-ship"></i>
+            <h3>Barranquilla</h3>
+            <p>Zona portuaria estratégica</p>
+        </div>
+
+        <div class="city-card">
+            <i class="fas fa-industry"></i>
+            <h3>Bucaramanga</h3>
+            <p>Sector energético y comercial</p>
+        </div>
+
+        <div class="city-card">
+            <i class="fas fa-umbrella-beach"></i>
+            <h3>Cartagena</h3>
+            <p>Turismo e industria portuaria</p>
+        </div>
+
+        <div class="city-card">
+            <i class="fas fa-tree-city"></i>
+            <h3>Pereira</h3>
+            <p>Logística y comercio regional</p>
+        </div>
+
+        <div class="city-card">
+            <i class="fas fa-city"></i>
+            <h3>Manizales</h3>
+            <p>Educación e industria ligera</p>
+        </div>
+
+        <div class="city-card">
+            <i class="fas fa-truck"></i>
+            <h3>Ibagué</h3>
+            <p>Distribución y transporte</p>
+        </div>
+
+        <div class="city-card">
+            <i class="fas fa-route"></i>
+            <h3>Villavicencio</h3>
+            <p>Conexión llanos orientales</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+<!-- WHY CHOOSE US -->
+<section class="why-section">
+
+    <div class="section-title">
+        <span class="mini-title">POR QUÉ ELEGIRNOS</span>
+
+        <h2>
+            Servicio Rápido y <span>Profesional</span>
+        </h2>
+
+        <p>
+            Tecnología, atención rápida y equipos modernos
+            para mantener tu aire comprimido funcionando.
+        </p>
+    </div>
+
+    <div class="why-grid">
+
+        <!-- ITEM -->
+        <div class="why-card">
+
+            <div class="why-number">01</div>
+
+            <div class="why-icon">
+                <i class="fas fa-bolt"></i>
+            </div>
+
+            <h3>Atención Rápida</h3>
+
+            <p>
+                Procesos ágiles para entregas
+                rápidas y servicio eficiente.
+            </p>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="why-card">
+
+            <div class="why-number">02</div>
+
+            <div class="why-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+
+            <h3>Máxima Seguridad</h3>
+
+            <p>
+                Equipos revisados y calibrados
+                para un funcionamiento seguro.
+            </p>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="why-card">
+
+            <div class="why-number">03</div>
+
+            <div class="why-icon">
+                <i class="fas fa-wind"></i>
+            </div>
+
+            <h3>Alta Presión</h3>
+
+            <p>
+                Recargas precisas para obtener
+                mayor rendimiento y potencia.
+            </p>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="why-card">
+
+            <div class="why-number">04</div>
+
+            <div class="why-icon">
+                <i class="fas fa-truck-fast"></i>
+            </div>
+
+            <h3>Servicio Móvil</h3>
+
+            <p>
+                Atención directamente en tu
+                hogar, taller o negocio.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- FAQ SECTION -->
+<section class="faq-section">
+
+    <div class="section-title">
+
+        <span class="mini-title">
+            PREGUNTAS FRECUENTES
+        </span>
+
+        <h2>
+            Resolvemos Tus
+            <span>Dudas</span>
+        </h2>
+
+        <p>
+            Información rápida sobre nuestros
+            servicios de recarga y venta
+            de compresores de aire.
+        </p>
+
+    </div>
+
+    <div class="faq-container">
+
+        <!-- FAQ -->
+        <div class="faq-item active-faq">
+
+            <button class="faq-question">
+
+                <span>
+                    ¿Cómo solicito una recarga?
+                </span>
+
+                <i class="fas fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Puedes solicitar el servicio
+                    escribiéndonos directamente
+                    por WhatsApp las 24 horas.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    ¿Realizan servicio a domicilio?
+                </span>
+
+                <i class="fas fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Sí, contamos con atención móvil
+                    para hogares, talleres y negocios.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    ¿También venden compresores?
+                </span>
+
+                <i class="fas fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Sí, ofrecemos distintos modelos
+                    de compresores de aire para
+                    diferentes necesidades.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                <span>
+                    ¿Atienden pedidos urgentes?
+                </span>
+
+                <i class="fas fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Sí, recibimos solicitudes y
+                    pedidos urgentes por WhatsApp
+                    durante todo el día.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- FORMULARIO WHATSAPP -->
+<section class="wa-form-section" id="contacto">
+
+    <div class="section-title">
+        <span class="mini-title">PEDIDOS</span>
+
+        <h2>
+            Solicita tu <span>Servicio Ahora</span>
+        </h2>
+
+        <p>
+            Completa el formulario y te contactamos por WhatsApp al instante.
+        </p>
+    </div>
+
+    <form class="wa-form" id="whatsappForm">
+
+        <div class="input-grid">
+
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+            <input type="tel" id="telefono" placeholder="Teléfono" required>
+
+        </div>
+
+        <input type="text" id="servicio" placeholder="¿Qué necesitas? (Recarga / Compra compresor)" required>
+
+        <textarea id="mensaje" placeholder="Describe tu necesidad..." rows="5"></textarea>
+
+        <button type="submit">
+            <i class="fab fa-whatsapp"></i>
+            Enviar a WhatsApp
+        </button>
+
+    </form>
+
+</section>
+<!-- CTA -->
+<section>
+
+    <div class="cta">
+
+        <h2>
+            Potencia Tu Sistema de Aire
+        </h2>
+
+        <p>
+            Optimiza el rendimiento de tus compresores
+            con nuestro servicio técnico especializado
+            y recargas de alta precisión.
+        </p>
+
+        <a href="#" class="btn btn-secondary">
+            Contactar Ahora
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- BRAND -->
+        <div class="footer-col">
+            <h3>Compresores de Aire Colombia</h3>
+
+            <p>
+                Especialistas en recarga de compresores de aire
+                y venta de equipos. Servicio rápido y atención por WhatsApp 24/7.
+            </p>
+
+            <a class="footer-whatsapp" href="https://wa.me/573003759008" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Escríbenos ahora
+            </a>
+        </div>
+
+        <!-- SERVICIOS -->
+        <div class="footer-col">
+            <h3>Servicios</h3>
+
+            <a href="#servicios">
+                <i class="fas fa-wind"></i> Recarga de compresores
+            </a>
+
+            <a href="#servicios">
+                <i class="fas fa-gauge-high"></i> Mantenimiento
+            </a>
+
+            <a href="#servicios">
+                <i class="fas fa-store"></i> Venta de compresores
+            </a>
+
+            <a href="#formulario">
+                <i class="fas fa-clock"></i> Pedidos 24/7
+            </a>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="footer-col">
+            <h3>Contacto</h3>
+
+            <p>
+                <i class="fas fa-phone"></i>
+                +57 300 375 9008
+            </p>
+
+            <p>
+                <i class="fas fa-envelope"></i>
+                compresorescolombia@gmail.com
+            </p>
+
+            <p>
+                <i class="fas fa-location-dot"></i>
+                Colombia
+            </p>
+        </div>
+
+        <!-- HORARIO -->
+       
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Compresores de Aire Colombia — Todos los derechos reservados.
+    </div>
+
+</footer>
+<script>
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+
+    const button = item.querySelector('.faq-question');
+
+    button.addEventListener('click', () => {
+
+        item.classList.toggle('active-faq');
+
+    });
+
+});
+
+</script>
+<script>
+
+document.getElementById("whatsappForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let nombre = document.getElementById("nombre").value;
+    let telefono = document.getElementById("telefono").value;
+    let servicio = document.getElementById("servicio").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    let texto =
+`📦 *Nuevo Pedido*
+👤 Nombre: ${nombre}
+📞 Tel: ${telefono}
+🛠️ Servicio: ${servicio}
+📝 Mensaje: ${mensaje}`;
+
+    let numero = "573003759008"; // <-- TU WHATSAPP
+
+    let url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
+
+});
+
+</script>
+</body>
+</html>
